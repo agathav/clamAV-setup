@@ -17,8 +17,6 @@ source resolve-machine.sh                 # Resolve operating system as MACHINE
 
 if [ $MACHINE = "Linux" ]; then
 
-  echo "Linux..."
-
 	./os/linux/install-prerequisites.sh
   ./os/linux/build-clamav.sh $FRESCHCLAM_CONFIG_DIR $DATABASE_DIR
   ./os/linux/configure-users.sh
