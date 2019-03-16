@@ -23,6 +23,7 @@ find . -type 'd' | grep "clamav-" | grep -v "clamav-latest" | xargs sudo rm -rf 
 # Print info and exit ----------------------------------------------------------
 echo
 if [ "$STATUS" == "S" ];
+
 then
   echo "Download complete"
   echo "Enter clamav-latest to install the latest version of ClamAV"
