@@ -1,0 +1,4 @@
+notes.txt
+*.py
+/__pycache__
+exps/
