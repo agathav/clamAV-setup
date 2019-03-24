@@ -12,10 +12,10 @@ FRESCHCLAM_CONFIG_DIR="/usr/local/etc/"
 DATABASE_DIR="/var/lib/clamav"
 
 ./clamav/download-latest.sh               # Download and extract latest version of ClamAV as clamav-latest
-source resolve-machine.sh                 # Resolve operating system as MACHINE
+source resolve-machine.sh                 # Resolve operating system as MACHINE_OS
 
 
-if [ $MACHINE = "Linux" ]; then
+if [ $MACHINE_OS = "Linux" ]; then
 
 	./os/linux/install-prerequisites.sh
   ./os/linux/build-clamav.sh $FRESCHCLAM_CONFIG_DIR $DATABASE_DIR
@@ -25,7 +25,7 @@ if [ $MACHINE = "Linux" ]; then
   sudo service clamav-freshclam start
   sudo systemctl daemon-reload
 
-elif [ $MACHINE = "Mac" ]; then
+elif [ $MACHINE_OS = "Mac" ]; then
 
 	./os/macos/handle-homebrew.sh               # Install or upgrade homebrew
   ./os/macos/install-prerequisites.sh

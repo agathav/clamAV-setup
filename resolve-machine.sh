@@ -10,9 +10,9 @@
 
 unameOut="$(uname -s)"
 case "${unameOut}" in
-    Linux*)     MACHINE=Linux;;
-    Darwin*)    MACHINE=Mac;;
-    *)          MACHINE="UNKNOWN: ${unameOut}"
+    Linux*)     MACHINE_OS=Linux;;
+    Darwin*)    MACHINE_OS=Mac;;
+    *)          MACHINE_OS="UNKNOWN: ${unameOut}"
 esac
 
-export MACHINE
+export MACHINE_OS
