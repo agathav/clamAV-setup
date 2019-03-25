@@ -8,7 +8,7 @@ if [[ $? != 0 ]] ; then                                              # Install
 
 else                                                                 # Upgrade
 
-    echo "Homebrew is installed. Upgrade"
+    echo "Homebrew is installed. Upgrading..."
     brew update
 
 fi
