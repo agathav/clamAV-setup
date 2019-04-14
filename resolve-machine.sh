@@ -3,7 +3,7 @@
 #
 # Running the present script from inside another script makes
 # the udnerlying operating system's type available as the
-# MACHINE variable.
+# MACHINE_OS variable.
 #
 # Currently recognizable types: Linux, Mac
 #

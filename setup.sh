@@ -14,8 +14,3 @@ sudo ./clamav-install.sh
 # Report configuration ---------------------------------------------------------
 
 sudo ./mutt-install.sh $EMAIL_USERNAME $EMAIL_PASSWORD $ID
-
-# TEST
-#
-# ./clamav-daily <DIRTOSCAN>
-#
